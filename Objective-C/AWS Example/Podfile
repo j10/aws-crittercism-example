@@ -1,0 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+pod 'CrittercismSDK', '~> 5.0'
+pod 'AWSiOSSDKv2', '~> 2.0'
+pod 'AWSCognitoSync', '~> 1.0'
+

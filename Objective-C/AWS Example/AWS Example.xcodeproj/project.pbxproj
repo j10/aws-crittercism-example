@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BE145AEB8430AFF264CE0DA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BBB5111EACC12D7E661F66 /* libPods.a */; };
+		D0D635AE1A0C6CCD00F751AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D635AD1A0C6CCD00F751AE /* main.m */; };
+		D0D635B11A0C6CCD00F751AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D635B01A0C6CCD00F751AE /* AppDelegate.m */; };
+		D0D635B71A0C6CCD00F751AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D635B51A0C6CCD00F751AE /* Main.storyboard */; };
+		D0D635B91A0C6CCD00F751AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D635B81A0C6CCD00F751AE /* Images.xcassets */; };
+		D0D635BC1A0C6CCE00F751AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D635BA1A0C6CCE00F751AE /* LaunchScreen.xib */; };
+		D0D635C81A0C6CCE00F751AE /* AWS_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D635C71A0C6CCE00F751AE /* AWS_ExampleTests.m */; };
+		D0D635D31A0C755E00F751AE /* ErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D635D21A0C755E00F751AE /* ErrorViewController.m */; };
+		D0D635D71A0C7ADE00F751AE /* CognitoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D635D61A0C7ADE00F751AE /* CognitoViewController.m */; };
+		D0D635DA1A0C7AF600F751AE /* DynamoDBWriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D635D91A0C7AF600F751AE /* DynamoDBWriteViewController.m */; };
+		D0D635E01A0C7B1300F751AE /* SNSSendMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D635DF1A0C7B1300F751AE /* SNSSendMessageViewController.m */; };
+		D0D635E51A0CB1BC00F751AE /* DynamoDBReadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D635E41A0CB1BC00F751AE /* DynamoDBReadTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0D635C21A0C6CCE00F751AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0D635A01A0C6CCD00F751AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0D635A71A0C6CCD00F751AE;
+			remoteInfo = "AWS Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08BBB5111EACC12D7E661F66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5480F7AB7D466E3E9C717EEE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AC6DB648C67C3956EE50CD46 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D0D635A81A0C6CCD00F751AE /* AWS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AWS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D635AC1A0C6CCD00F751AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D635AD1A0C6CCD00F751AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0D635AF1A0C6CCD00F751AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0D635B01A0C6CCD00F751AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0D635B61A0C6CCD00F751AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0D635B81A0C6CCD00F751AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0D635BB1A0C6CCE00F751AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D0D635C11A0C6CCE00F751AE /* AWS ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AWS ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D635C61A0C6CCE00F751AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D635C71A0C6CCE00F751AE /* AWS_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWS_ExampleTests.m; sourceTree = "<group>"; };
+		D0D635D11A0C755E00F751AE /* ErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorViewController.h; sourceTree = "<group>"; };
+		D0D635D21A0C755E00F751AE /* ErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorViewController.m; sourceTree = "<group>"; };
+		D0D635D51A0C7ADE00F751AE /* CognitoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CognitoViewController.h; sourceTree = "<group>"; };
+		D0D635D61A0C7ADE00F751AE /* CognitoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CognitoViewController.m; sourceTree = "<group>"; };
+		D0D635D81A0C7AF600F751AE /* DynamoDBWriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamoDBWriteViewController.h; sourceTree = "<group>"; };
+		D0D635D91A0C7AF600F751AE /* DynamoDBWriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamoDBWriteViewController.m; sourceTree = "<group>"; };
+		D0D635DE1A0C7B1300F751AE /* SNSSendMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSSendMessageViewController.h; sourceTree = "<group>"; };
+		D0D635DF1A0C7B1300F751AE /* SNSSendMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSSendMessageViewController.m; sourceTree = "<group>"; };
+		D0D635E21A0C7B5400F751AE /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D0D635E31A0CB1BC00F751AE /* DynamoDBReadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamoDBReadTableViewController.h; sourceTree = "<group>"; };
+		D0D635E41A0CB1BC00F751AE /* DynamoDBReadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamoDBReadTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0D635A51A0C6CCD00F751AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE145AEB8430AFF264CE0DA /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D635BE1A0C6CCE00F751AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03D6BDE0CDA81C9ABEFECED8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC6DB648C67C3956EE50CD46 /* Pods.debug.xcconfig */,
+				5480F7AB7D466E3E9C717EEE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D05DB2EB13C55BDD05CEF5DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08BBB5111EACC12D7E661F66 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0D6359F1A0C6CCD00F751AE = {
+			isa = PBXGroup;
+			children = (
+				D0D635AA1A0C6CCD00F751AE /* AWS Example */,
+				D0D635C41A0C6CCE00F751AE /* AWS ExampleTests */,
+				D0D635A91A0C6CCD00F751AE /* Products */,
+				03D6BDE0CDA81C9ABEFECED8 /* Pods */,
+				D05DB2EB13C55BDD05CEF5DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0D635A91A0C6CCD00F751AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0D635A81A0C6CCD00F751AE /* AWS Example.app */,
+				D0D635C11A0C6CCE00F751AE /* AWS ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0D635AA1A0C6CCD00F751AE /* AWS Example */ = {
+			isa = PBXGroup;
+			children = (
+				D0D635B51A0C6CCD00F751AE /* Main.storyboard */,
+				D0D635E21A0C7B5400F751AE /* Constants.h */,
+				D0D635AF1A0C6CCD00F751AE /* AppDelegate.h */,
+				D0D635B01A0C6CCD00F751AE /* AppDelegate.m */,
+				D0D635D41A0C7ABE00F751AE /* Crittercism */,
+				D0D635E11A0C7B1800F751AE /* AWS */,
+				D0D635B81A0C6CCD00F751AE /* Images.xcassets */,
+				D0D635BA1A0C6CCE00F751AE /* LaunchScreen.xib */,
+				D0D635AB1A0C6CCD00F751AE /* Supporting Files */,
+			);
+			path = "AWS Example";
+			sourceTree = "<group>";
+		};
+		D0D635AB1A0C6CCD00F751AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0D635AC1A0C6CCD00F751AE /* Info.plist */,
+				D0D635AD1A0C6CCD00F751AE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0D635C41A0C6CCE00F751AE /* AWS ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0D635C71A0C6CCE00F751AE /* AWS_ExampleTests.m */,
+				D0D635C51A0C6CCE00F751AE /* Supporting Files */,
+			);
+			path = "AWS ExampleTests";
+			sourceTree = "<group>";
+		};
+		D0D635C51A0C6CCE00F751AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0D635C61A0C6CCE00F751AE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0D635D41A0C7ABE00F751AE /* Crittercism */ = {
+			isa = PBXGroup;
+			children = (
+				D0D635D11A0C755E00F751AE /* ErrorViewController.h */,
+				D0D635D21A0C755E00F751AE /* ErrorViewController.m */,
+			);
+			name = Crittercism;
+			sourceTree = "<group>";
+		};
+		D0D635E11A0C7B1800F751AE /* AWS */ = {
+			isa = PBXGroup;
+			children = (
+				D0D635D51A0C7ADE00F751AE /* CognitoViewController.h */,
+				D0D635D61A0C7ADE00F751AE /* CognitoViewController.m */,
+				D0D635D81A0C7AF600F751AE /* DynamoDBWriteViewController.h */,
+				D0D635D91A0C7AF600F751AE /* DynamoDBWriteViewController.m */,
+				D0D635E31A0CB1BC00F751AE /* DynamoDBReadTableViewController.h */,
+				D0D635E41A0CB1BC00F751AE /* DynamoDBReadTableViewController.m */,
+				D0D635DE1A0C7B1300F751AE /* SNSSendMessageViewController.h */,
+				D0D635DF1A0C7B1300F751AE /* SNSSendMessageViewController.m */,
+			);
+			name = AWS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0D635A71A0C6CCD00F751AE /* AWS Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D635CB1A0C6CCE00F751AE /* Build configuration list for PBXNativeTarget "AWS Example" */;
+			buildPhases = (
+				C977552D39FD012BCF076C50 /* Check Pods Manifest.lock */,
+				D0D635A41A0C6CCD00F751AE /* Sources */,
+				D0D635A51A0C6CCD00F751AE /* Frameworks */,
+				D0D635A61A0C6CCD00F751AE /* Resources */,
+				1AF69BED7C171CC8A88A1D87 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AWS Example";
+			productName = "AWS Example";
+			productReference = D0D635A81A0C6CCD00F751AE /* AWS Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0D635C01A0C6CCE00F751AE /* AWS ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D635CE1A0C6CCE00F751AE /* Build configuration list for PBXNativeTarget "AWS ExampleTests" */;
+			buildPhases = (
+				D0D635BD1A0C6CCE00F751AE /* Sources */,
+				D0D635BE1A0C6CCE00F751AE /* Frameworks */,
+				D0D635BF1A0C6CCE00F751AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0D635C31A0C6CCE00F751AE /* PBXTargetDependency */,
+			);
+			name = "AWS ExampleTests";
+			productName = "AWS ExampleTests";
+			productReference = D0D635C11A0C6CCE00F751AE /* AWS ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0D635A01A0C6CCD00F751AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Crittercism;
+				TargetAttributes = {
+					D0D635A71A0C6CCD00F751AE = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					D0D635C01A0C6CCE00F751AE = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = D0D635A71A0C6CCD00F751AE;
+					};
+				};
+			};
+			buildConfigurationList = D0D635A31A0C6CCD00F751AE /* Build configuration list for PBXProject "AWS Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0D6359F1A0C6CCD00F751AE;
+			productRefGroup = D0D635A91A0C6CCD00F751AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0D635A71A0C6CCD00F751AE /* AWS Example */,
+				D0D635C01A0C6CCE00F751AE /* AWS ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0D635A61A0C6CCD00F751AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D635B71A0C6CCD00F751AE /* Main.storyboard in Resources */,
+				D0D635BC1A0C6CCE00F751AE /* LaunchScreen.xib in Resources */,
+				D0D635B91A0C6CCD00F751AE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D635BF1A0C6CCE00F751AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AF69BED7C171CC8A88A1D87 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C977552D39FD012BCF076C50 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0D635A41A0C6CCD00F751AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D635D71A0C7ADE00F751AE /* CognitoViewController.m in Sources */,
+				D0D635D31A0C755E00F751AE /* ErrorViewController.m in Sources */,
+				D0D635E01A0C7B1300F751AE /* SNSSendMessageViewController.m in Sources */,
+				D0D635DA1A0C7AF600F751AE /* DynamoDBWriteViewController.m in Sources */,
+				D0D635E51A0CB1BC00F751AE /* DynamoDBReadTableViewController.m in Sources */,
+				D0D635B11A0C6CCD00F751AE /* AppDelegate.m in Sources */,
+				D0D635AE1A0C6CCD00F751AE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D635BD1A0C6CCE00F751AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D635C81A0C6CCE00F751AE /* AWS_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0D635C31A0C6CCE00F751AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0D635A71A0C6CCD00F751AE /* AWS Example */;
+			targetProxy = D0D635C21A0C6CCE00F751AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0D635B51A0C6CCD00F751AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D635B61A0C6CCD00F751AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0D635BA1A0C6CCE00F751AE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D635BB1A0C6CCE00F751AE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0D635C91A0C6CCE00F751AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0D635CA1A0C6CCE00F751AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0D635CC1A0C6CCE00F751AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6DB648C67C3956EE50CD46 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "AWS Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0D635CD1A0C6CCE00F751AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5480F7AB7D466E3E9C717EEE /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "AWS Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D0D635CF1A0C6CCE00F751AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AWS ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWS Example.app/AWS Example";
+			};
+			name = Debug;
+		};
+		D0D635D01A0C6CCE00F751AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AWS ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWS Example.app/AWS Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0D635A31A0C6CCD00F751AE /* Build configuration list for PBXProject "AWS Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D635C91A0C6CCE00F751AE /* Debug */,
+				D0D635CA1A0C6CCE00F751AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D635CB1A0C6CCE00F751AE /* Build configuration list for PBXNativeTarget "AWS Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D635CC1A0C6CCE00F751AE /* Debug */,
+				D0D635CD1A0C6CCE00F751AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D635CE1A0C6CCE00F751AE /* Build configuration list for PBXNativeTarget "AWS ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D635CF1A0C6CCE00F751AE /* Debug */,
+				D0D635D01A0C6CCE00F751AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0D635A01A0C6CCD00F751AE /* Project object */;
+}
